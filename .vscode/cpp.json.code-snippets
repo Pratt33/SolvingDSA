@@ -1,0 +1,16 @@
+{
+    "C++ Boilerplate": {
+        "scope": "cpp",
+        "prefix": "cppmain",
+        "body": [
+            "#include <bits/stdc++.h>",
+            "using namespace std;",
+            "",
+            "int main() {",
+            "    // Your code starts here",
+            "    return 0;",
+            "}"
+        ],
+        "description": "Basic C++ main function template"
+    }
+}

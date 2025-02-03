@@ -1,0 +1,62 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}",
+        "${file}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    },
+    {
+      "label": "compile and run",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}",
+        "${file}",
+        "&&",
+        "${fileDirname}\\${fileBasenameNoExtension}",
+        "<",
+        "${fileDirname}\\input.txt",
+        ">",
+        "${fileDirname}\\output.txt",
+        "&&",
+        "del",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": {
+        "owner": "cpp",
+        "fileLocation": [
+          "relative",
+          "${workspaceRoot}"
+        ],
+        "pattern": {
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
+        }
+      }
+    }
+  ]
+}

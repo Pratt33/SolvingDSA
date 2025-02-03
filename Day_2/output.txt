@@ -1,0 +1,21 @@
+Exploring map:
+1 2
+2 3
+3 1
+Value at key 2: 3
+Value at key 5: 0
+Value at key 3: 1
+Lower bound: 2 3
+Upper bound: 3 1
+
+Exploring multimap:
+1 2
+1 3
+
+Exploring unordered_map:
+Unordered map elements:
+2 5
+3 4
+1 2
+Value at key 2: 5
+Value at key 3: 4
