@@ -8,13 +8,14 @@
       "args": [
         "-std=c++17",
         "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}",
+        "${fileDirname}/${fileBasenameNoExtension}",
         "${file}"
       ],
       "group": {
         "kind": "build",
         "isDefault": false
-      }
+      },
+      "problemMatcher": ["$gcc"]
     },
     {
       "label": "compile and run",
@@ -23,17 +24,14 @@
       "args": [
         "-std=c++17",
         "-o",
-        "${fileDirname}\\${fileBasenameNoExtension}",
+        "${fileDirname}/${fileBasenameNoExtension}",
         "${file}",
         "&&",
-        "${fileDirname}\\${fileBasenameNoExtension}",
+        "${fileDirname}/${fileBasenameNoExtension}",
         "<",
-        "${fileDirname}\\input.txt",
+        "${fileDirname}/input.txt",
         ">",
-        "${fileDirname}\\output.txt",
-        "&&",
-        "del",
-        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        "${fileDirname}/output.txt"
       ],
       "group": {
         "kind": "build",
@@ -42,21 +40,7 @@
       "presentation": {
         "reveal": "never"
       },
-      "problemMatcher": {
-        "owner": "cpp",
-        "fileLocation": [
-          "relative",
-          "${workspaceRoot}"
-        ],
-        "pattern": {
-          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-          "file": 1,
-          "line": 2,
-          "column": 3,
-          "severity": 4,
-          "message": 5
-        }
-      }
+      "problemMatcher": ["$gcc"]
     }
   ]
 }
