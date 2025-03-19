@@ -1,6 +1,6 @@
-# Strivers-A2Z-DSA
+# DSA
 
-Welcome to the **Strivers-A2Z-DSA** repository! This repository contains my solutions and implementations for the **Striver's A2Z DSA Course/Sheet**. It's a comprehensive collection of Data Structures and Algorithms problems, aimed at helping you master the fundamentals and advanced concepts of DSA.
+Welcome to the **SolvingDSA** repository! This repository contains my solutions and implementations for the **DSA Course/Sheet**. It's a comprehensive collection of Data Structures and Algorithms problems, aimed at helping you master the fundamentals and advanced concepts of DSA.
 
 ## 📌 Table of Contents
 - [About](#about)
@@ -11,12 +11,12 @@ Welcome to the **Strivers-A2Z-DSA** repository! This repository contains my solu
 - [License](#license)
 
 ## About
-This repository is a personal collection of my solutions to problems from **Striver's A2Z DSA Course/Sheet**. The goal is to practice and improve my problem-solving skills, as well as to document my progress in learning Data Structures and Algorithms.
+This repository is a personal collection of my solutions to problems from **DSA Course/Sheet**. The goal is to practice and improve my problem-solving skills, as well as to document my progress in learning Data Structures and Algorithms.
 
 ## Repository Structure
 The repository is organized as follows:
 ```
-Strivers_DSA_C++/
+DSA_C++/
 ├── Arrays/
 │   ├── 01_Two_Sum.cpp
 │   ├── 02_Max_Subarray_Sum.cpp
@@ -50,7 +50,7 @@ Strivers_DSA_C++/
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Pratt33/Strivers-A2Z-DSA.git
+   git clone https://github.com/Pratt33/SolvingDSA.git
 
 2. Navigate to the specific topic folder (e.g., Arrays/).
 
