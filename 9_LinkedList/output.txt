@@ -1,0 +1,8 @@
+List with cycle (first 5 elements): 1 2 3 4 5 2 3 4 5 2 
+Cycle starts at node with value: 2
+
+List without cycle: 1 2 3 
+No cycle found
+
+Single node list: 1 
+No cycle found
