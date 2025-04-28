@@ -1,0 +1,3 @@
+Doubly Linked List: 2 5 8 7 
+List After Deleting Head: 5 8 7 
+List After Deleting Tail: 5 8 
