@@ -1,3 +1,2 @@
-Doubly Linked List: 2 5 8 7 
-List After Deleting Head: 5 8 7 
-List After Deleting Tail: 5 8 
+Original List: 1 2 3 4 5 
+List after deleting the 3rd node: 1 2 4 5 
