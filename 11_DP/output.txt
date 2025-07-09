@@ -1,0 +1,3 @@
+[SolutionVector] Can cross the river!
+[SolutionSet]    Can cross the river!
+[SolutionMemo]   Can cross the river!
