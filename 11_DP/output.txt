@@ -1,1 +1,1 @@
-Subset with sum 6 exists.
+Number of combinations: 4
