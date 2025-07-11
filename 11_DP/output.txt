@@ -1,1 +1,1 @@
-Number of combinations: 4
+Maximum Profit with Cooldown: 1
