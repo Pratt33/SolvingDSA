@@ -1,1 +1,44 @@
-Alien language order: bdac
+=== TEST CASE 1 ===
+numCourses = 4
+prerequisites = [[1,0], [2,0], [3,1], [3,2]]
+Meaning:
+- Course 1 requires course 0
+- Course 2 requires course 0
+- Course 3 requires course 1
+- Course 3 requires course 2
+
+Can finish all courses? YES
+Expected: YES
+
+=== TEST CASE 2 ===
+numCourses = 2
+prerequisites = [[1,0], [0,1]]
+Meaning:
+- Course 1 requires course 0
+- Course 0 requires course 1
+This creates a cycle!
+
+Can finish all courses? NO
+Expected: NO
+
+=== TEST CASE 3 ===
+numCourses = 3
+prerequisites = []
+Meaning: No prerequisites for any course
+
+Can finish all courses? YES
+Expected: YES
+
+=== DETAILED WALKTHROUGH FOR TEST CASE 1 ===
+Adjacency List:
+Course 0 -> [1, 2]
+Course 1 -> [3]
+Course 2 -> [3]
+Course 3 -> []
+Initial Indegrees: [0, 1, 1, 2]
+
+Processing Order:
+1. Start with course 0 (indegree = 0)
+2. After course 0, courses 1 and 2 become available
+3. After courses 1 and 2, course 3 becomes available
+4. All courses processed successfully!
